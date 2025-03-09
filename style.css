@@ -264,6 +264,7 @@ b{
 
 .botao-agendar{
     background-color: white;
+    border: 2px solid black;
     color: black;
     border: none;
     padding: 10px 20px;
@@ -276,11 +277,17 @@ b{
 }
 
 .botao-agendar a{
-    color: black;
+    color: inherit;
     text-decoration: none;
 }
 
+.botao-agendar:hover{
+    background-color: rgba(48, 48, 48, 0.281);
+}
 
+.botao-agendar:hover a{
+    color: white;
+}
 
 footer{
     text-align: center;
@@ -322,3 +329,370 @@ footer{
 }
 
 
+@media screen and (max-width: 1200px){
+    nav ul, nav ul li{
+        display: flex;
+    }
+
+    .img-cortes{
+        display: flex;
+        width: 100%;
+    }
+
+    .ul-cortes .li-cortes{
+        display: flex;
+        width: 80%;
+        transition: .5s;
+    }
+
+    .div-img-cortes img{
+        display: flex;
+        width: 250px;
+        max-width: 255px;
+        height: auto;
+    }
+
+    .div-nome-img, .nome-img{
+        display: flex;
+        width: 130px;
+        height: 65px;
+        margin-left: -93px;
+        margin-top: 145px;
+    }
+
+}
+
+@media screen and (max-width: 1070px){
+
+    nav ul, nav ul li{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .img-cortes{
+        display: flex;
+        width: 100%;
+    }
+
+    .ul-cortes .li-cortes{
+        display: flex;
+        width: 70%;
+        transition: .5s;
+    }
+
+    .div-img-cortes img{
+        display: flex;
+        width: 200px;
+        max-width: 250px;
+        height: auto;
+    }
+
+    .div-nome-img, .nome-img{
+        display: flex;
+        width: 105px;
+        height: 60px;
+        margin-left: -75px;
+        margin-top: 110px;
+        font-size: 14px;
+    }
+
+    .img-produtos{
+        display: flex;
+        width: 85%;
+        height: auto;
+    }
+
+    .produtos{
+        display: flex;
+        justify-content: right;
+    }
+
+    .produtos-name1, .ul-produtos, .produtos1{
+        justify-content: right;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+}
+
+@media screen and (max-width: 920px){
+
+    nav ul, nav ul li{
+        display: flex;
+        justify-content: center;
+    }
+
+    .servicos-name{
+        font-size: 1em;
+    }
+
+    .tabela{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-tabela{
+        width: 35%;
+        height: auto;
+    }
+
+    .img-cortes{
+        display: flex;
+        width: 100%;
+    }
+
+    .ul-cortes .li-cortes{
+        display: flex;
+        width: 60%;
+        max-width: 65%;
+        transition: .5s;
+    }
+
+    .div-img-cortes img{
+        display: flex;
+        width: 180px;
+        max-width: 190px;
+        height: auto;
+    }
+
+    .div-nome-img, .nome-img, .br{
+        display: flex;
+        width: 90px;
+        height: 55px;
+        margin-left: -68px;
+        margin-top: 97px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .produtos-name{
+        font-size: 2rem;
+    }
+
+    .img-produtos{
+        display: flex;
+        width: 80%;
+        height: auto;
+    }
+
+    .produtos{
+        display: flex;
+        justify-content: right;
+    }
+
+    .produtos-name1, .ul-produtos, .produtos1{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+}
+
+@media screen and (max-width: 820px){
+
+    nav ul, nav ul li{
+        display: flex;
+        justify-content: center;
+    }
+
+    .servicos-name{
+        font-size: 0.9em;
+    }
+
+    .tabela{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-tabela{
+        width: 35%;
+        height: auto;
+    }
+
+    .img-cortes{
+        display: flex;
+        width: 100%;
+    }
+
+    .img-cortes{
+        display: flex;
+        width: 100%;
+    }
+
+    .ul-cortes .li-cortes{
+        display: flex;
+        width: 55%;
+        max-width: 60%;
+        transition: .5s;
+    }
+
+    .div-img-cortes img{
+        display: flex;
+        width: 160px;
+        max-width: 165px;
+        height: auto;
+    }
+
+    .div-nome-img, .nome-img, .br{
+        display: flex;
+        width: 90px;
+        height: 50px;
+        margin-left: -63px;
+        margin-top: 86px;
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .estatisticas{
+        display: flex;
+        margin: 0;
+    }
+
+    .itens h2{
+        font-size: 3em;
+    }
+
+    .p-estatisticas{
+        font-size: 1em;
+    }
+
+    .sessao2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .produtos-name{
+        font-size: 2rem;
+    }
+
+    .img-produtos img{
+        display: flex;
+        width: 90%;
+        height: auto;
+        margin-top: -150px;
+    }
+
+    .produtos{
+        display: flex;
+        margin-left: 200px;
+        margin-top: 300px;
+    }
+
+    .produtos-name1, .ul-produtos, .produtos1{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+}
+
+@media screen and (max-width: 750px){
+
+    nav ul, nav ul li{
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagem-banner{
+        width: 100%;
+        height: 300px;
+    }
+
+    .imagem-banner img{
+        width: 300px;
+        height: auto;
+    }
+
+    .servicos-name{
+        font-size: 0.9em;
+    }
+
+    .tabela{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tabela img{
+        width: 40%;
+        height: 400px;
+    }
+
+    .img-cortes{
+        display: flex;
+        width: 100%;
+    }
+
+    .img-cortes{
+        display: flex;
+        width: 100%;
+    }
+
+    .ul-cortes .li-cortes{
+        display: flex;
+        width: 55%;
+        max-width: 60%;
+        transition: .5s;
+    }
+
+    .div-img-cortes img{
+        display: flex;
+        width: 160px;
+        max-width: 165px;
+        height: auto;
+    }
+
+    .div-nome-img, .nome-img, .br{
+        display: flex;
+        width: 90px;
+        height: 50px;
+        margin-left: -63px;
+        margin-top: 86px;
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .estatisticas{
+        display: flex;
+        margin: 0;
+    }
+
+    .itens h2{
+        font-size: 3em;
+    }
+
+    .p-estatisticas{
+        font-size: 1em;
+    }
+
+    .sessao2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .produtos-name{
+        font-size: 2rem;
+    }
+
+    .img-produtos img{
+        display: flex;
+        width: 90%;
+        height: auto;
+        margin-top: -150px;
+    }
+
+    .produtos{
+        display: flex;
+        margin-left: 200px;
+        margin-top: 300px;
+    }
+
+    .produtos-name1, .ul-produtos, .produtos1{
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+}
