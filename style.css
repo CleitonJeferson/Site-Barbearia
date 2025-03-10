@@ -5,8 +5,8 @@
 }
 
 body{
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 25%, rgba(45,45,45,1) 100%);
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(20,20,20,0.8883928571428571) 33%, rgba(0,0,0,0.9612219887955182) 100%);
     overflow-x: hidden;
 }
 
@@ -109,7 +109,7 @@ nav ul li a{
 
 .img-cortes{
     display: flex;
-    margin-left: 37px;
+    margin-left: 47px;
     padding: 15px;
     border-radius: 5%;
 }
@@ -330,42 +330,6 @@ footer{
 
     .ul-cortes .li-cortes{
         display: flex;
-        width: 95%;
-        max-width: 100%;
-        transition: .5s;
-    }
-
-    .div-img-cortes img{
-        display: flex;
-        width: 250px;
-        max-width: 255px;
-        height: auto;
-    }
-
-    .div-nome-img, .nome-img{
-        display: flex;
-        width: 130px;
-        height: 65px;
-        margin-left: -93px;
-        margin-top: 145px;
-    }
-
-}
-
-
-@media screen and (max-width: 1280px){
-    nav ul, nav ul li{
-        display: flex;
-        justify-content: center;
-    }
-
-    .img-cortes{
-        display: flex;
-        width: 100%;
-    }
-
-    .ul-cortes .li-cortes{
-        display: flex;
         width: 80%;
         max-width: 85%;
         transition: .5s;
@@ -450,6 +414,12 @@ footer{
         justify-content: center;
     }
 
+    .imagem-banner{
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-top: 100px;
+        height: 300px;
+    }
+
     .servicos-name{
         font-size: 1em;
     }
@@ -482,6 +452,7 @@ footer{
         width: 180px;
         max-width: 190px;
         height: auto;
+        margin-left: 10px;
     }
 
     .div-nome-img, .nome-img, .br{
@@ -523,6 +494,12 @@ footer{
         justify-content: center;
     }
 
+    .imagem-banner{
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-top: 100px;
+        height: 300px;
+    }
+
     .servicos-name{
         font-size: 0.9em;
     }
@@ -560,6 +537,7 @@ footer{
         width: 160px;
         max-width: 165px;
         height: auto;
+        margin-left: 30px;
     }
 
     .div-nome-img, .nome-img, .br{
@@ -665,17 +643,9 @@ footer{
         width: 160px;
         max-width: 165px;
         height: auto;
+        margin-left: 20px;
     }
 
-    .div-nome-img, .nome-img, .br{
-        display: flex;
-        width: 90px;
-        height: 50px;
-        margin-left: -63px;
-        margin-top: 86px;
-        font-size: 11px;
-        font-weight: bold;
-    }
 
     .estatisticas{
         display: flex;
@@ -853,7 +823,7 @@ footer{
 
     .tabela img{
         width: 40%;
-        height: 400px;
+        
     }
 
     .img-cortes{
@@ -873,16 +843,6 @@ footer{
         width: 135px;
         max-width: 155px;
         height: auto;
-    }
-
-    .div-nome-img{
-        display: flex;
-        font-weight: bold;
-        width: 30px;
-        height: 100px;
-        margin-left: -50px;
-        margin-top: 53px;
-        font-size: 1em;
     }
 
     .estatisticas{
@@ -933,12 +893,146 @@ footer{
 }
 
 
+@media screen and (max-width: 590px){
+
+    header{
+        width: 100%;
+        height: 250px;
+        margin-top: -100px;
+    }
+
+    nav ul, nav ul li{
+        display: none;
+
+    }
+
+    .imagem-banner{
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-top: 100px;
+        height: 250px;
+    }
+
+    .imagem-banner img{
+        width: 200px;
+    }
+
+    .servicos-name{
+        font-size: 0.7em;
+    }
+
+    .servico-img img{
+        width: 20px;
+    }
+
+    .tabela{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tabela img{
+        width: 45%;
+        height: 350px;
+    }
+
+    .img-cortes{
+        display: flex;
+        width: 100%;
+    }
+
+    .ul-cortes {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    .li-cortes {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-cortes img{
+        display: flex;
+        width: 100%;
+        height: 200px;
+    }
+
+    .estatisticas{
+        display: flex;
+        margin: 0;
+    }
+
+    .itens h2{
+        font-size: 2em;
+    }
+
+    .p-estatisticas{
+        font-size: 10px;
+    }
+
+    .sessao2{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .produtos-name{
+        font-size: 1.3rem;
+    }
+
+    .img-produtos img{
+        display: flex;
+        width: 90%;
+        height: auto;
+        margin-top: -100px;
+    }
+
+    .produtos{
+        display: flex;
+        width: 100%;
+        margin-left: 120px;
+        margin-top: 400px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .produtos-name1, .ul-produtos, .produtos1, b{
+        list-style: none;
+    }
+
+    .produtos1 span{
+        font-size: 16px;
+    }
+
+    .localizacao img{
+        width: 60%;
+        max-width: 65%;
+        height: auto;
+    }
+
+    .h-localizacao, .telefone, .endereco{
+        font-size: 14px;
+    }
+
+    .botao-agendar{
+        padding: 5px 10px;
+        font-size: 14px;
+        width: 50%;
+    }
+
+}
+
+
 @media screen and (max-width: 430px){
 
     header{
         width: 100%;
         height: 250px;
-        margin-top: -90px;
+        margin-top: -100px;
     }
 
     nav ul, nav ul li{
@@ -972,8 +1066,8 @@ footer{
     }
 
     .tabela img{
-        width: 55%;
-        height: 240px;
+        width: 65%;
+        height: 300px;
     }
 
     .img-cortes{
@@ -999,12 +1093,12 @@ footer{
         width: 140px;
         max-width: 145px;
         height: auto;
-        margin-left: 80px;
+        margin-left: 10px;
     }
 
     .estatisticas{
         display: flex;
-        margin: 0;
+        margin-top: -100px;
     }
 
     .itens h2{
@@ -1016,6 +1110,7 @@ footer{
     }
 
     .sessao2{
+        margin-top: 20px;
         display: flex;
         width: 100%;
         justify-content: center;
@@ -1036,16 +1131,10 @@ footer{
     .produtos{
         display: flex;
         width: 100%;
+        margin-top: 400px;
         margin-left: 120px;
         justify-content: center;
         text-align: center;
-    }
-
-    .produtos-name1, .ul-produtos, .produtos1, b{
-        gap: 20px;
-        font-size: 13px;
-        margin-top: -50px;
-        list-style: none;
     }
 
     .produtos1 span{
@@ -1066,6 +1155,298 @@ footer{
         padding: 5px 10px;
         font-size: 14px;
         width: 50%;
+    }
+
+    .sessao4{
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (max-width: 360px){
+
+    header{
+        width: 100%;
+        height: 250px;
+        margin-top: -100px;
+    }
+
+    nav ul, nav ul li{
+        display: none;
+
+    }
+
+    .imagem-banner{
+        height: auto;
+    }
+
+    .imagem-banner img{
+        display: flex;
+        width: 200px;
+        height: 250px;
+        margin-top: 0;
+    }
+
+    .servicos-name{
+        font-size: 0.7em;
+    }
+
+    .servico-img img{
+        width: 20px;
+    }
+
+    .tabela{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tabela img{
+        width: 65%;
+        height: 300px;
+    }
+
+    .img-cortes{
+        display: flex;
+        width: 100%;
+    }
+
+    .ul-cortes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    .li-cortes {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .div-img-cortes img {
+        display: flex;
+        width: 130px;
+        max-width: 145px;
+        height: auto;
+        margin-left: 10px;
+    }
+
+    .estatisticas{
+        display: flex;
+        margin-top: -100px;
+        font-size: 1.2rem;
+    }
+
+    .itens h2{
+        font-size: 1.3em;
+    }
+
+    .p-estatisticas{
+        font-size: 10px;
+    }
+
+    .sessao2{
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .produtos-name{
+        font-size: 1.2rem;
+    }
+
+    .img-produtos img{
+        display: flex;
+        width: 90%;
+        height: auto;
+        margin-left: 5px;
+        margin-top: -40px;
+    }
+
+    .produtos{
+        display: flex;
+        width: 50%;
+        margin-top: 400px;
+        margin-left: 120px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .produtos-name1, .ul-produtos{
+        width: 300px;
+        margin-left: -10px;
+        margin-top: -180px;
+        height: 100px;
+    }
+
+    
+
+    .localizacao img{
+        width: 60%;
+        max-width: 65%;
+        height: auto;
+    }
+
+    .h-localizacao, .telefone, .endereco{
+        font-size: 14px;
+    }
+
+    .botao-agendar{
+        padding: 5px 10px;
+        font-size: 14px;
+        width: 50%;
+    }
+
+    .sessao4{
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+@media screen and (max-width: 320px){
+
+    header{
+        width: 100%;
+        height: 250px;
+        margin-top: -100px;
+    }
+
+    nav ul, nav ul li{
+        display: none;
+
+    }
+
+    .imagem-banner{
+        height: auto;
+    }
+
+    .imagem-banner img{
+        display: flex;
+        width: 200px;
+        height: 250px;
+        margin-top: 0;
+    }
+
+    .servicos-name{
+        font-size: 0.7em;
+    }
+
+    .servico-img img{
+        width: 20px;
+    }
+
+    .tabela{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tabela img{
+        width: 65%;
+        height: 300px;
+    }
+
+    .img-cortes{
+        display: flex;
+        width: 100%;
+    }
+
+    .ul-cortes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    .li-cortes {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .div-img-cortes img {
+        display: flex;
+        width: 110px;
+        max-width: 145px;
+        height: auto;
+        margin-left: -7px;
+        margin-top: -10px;
+    }
+
+    .estatisticas{
+        display: flex;
+        margin-top: -100px;
+    }
+
+    .itens h2{
+        font-size: 1.3em;
+    }
+
+    .p-estatisticas{
+        font-size: 10px;
+    }
+
+    .sessao2{
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .produtos-name{
+        font-size: 1.2rem;
+    }
+
+    .img-produtos img{
+        display: flex;
+        width: 90%;
+        height: auto;
+        margin-top: -40px;
+    }
+
+    .produtos{
+        display: flex;
+        width: 100%;
+        margin-top: 400px;
+        margin-left: 120px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .produtos1 span{
+        font-size: 16px;
+    }
+
+    .localizacao img{
+        width: 60%;
+        max-width: 65%;
+        height: auto;
+    }
+
+    .h-localizacao, .telefone, .endereco{
+        font-size: 14px;
+    }
+
+    .botao-agendar{
+        padding: 5px 10px;
+        font-size: 14px;
+        width: 50%;
+    }
+
+    .sessao4{
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
     }
 
 }
